@@ -28,7 +28,7 @@ SET VCVARSPLAT=amd64
 @REM ******************
 @REM Forcibly move the Maven local repo
 
-SET MAVEN_OPTS=-Dmaven.repo.local=C:\Tools\m2
+@REM SET MAVEN_OPTS=-Dmaven.repo.local=C:\Tools\m2
 
 @REM *******************************************
 @REM
@@ -38,12 +38,13 @@ SET MAVEN_OPTS=-Dmaven.repo.local=C:\Tools\m2
 @REM command path
 @REM
 
-SET MAVEN_HOME=C:\Tools\apache-maven-3.5.0
-SET JAVA_HOME=C:\Tools\jdk
-SET MSVS=C:\Program Files (x86)\Microsoft Visual Studio 12.0
-SET PROTO_BIN=C:\Tools\protobuf-2.5.0
+SET MAVEN_HOME=C:\dev-tools\apache-maven-3.6.3
+SET JAVA_HOME=%JAVA_HOME%
+SET MSVS=C:\Program Files\Microsoft Visual Studio\2022\Professional
+SET PROTO_BIN=C:\dev-tools\protoc-3.7.1-win64\bin
 SET GIT_HOME=C:\Program Files\Git
+SET ZLIB_HOME=C:\dev-tools\zlib-1.2.12
 
 SET PATH=%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%PROTO_BIN%;%GIT_HOME%\bin;%PATH%
 
-CALL "%MSVS%\VC\vcvarsall.bat" %VCVARSPLAT%
+CALL "%MSVS%\VC\Auxiliary\Build\vcvarsall.bat" %VCVARSPLAT%

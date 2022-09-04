@@ -117,7 +117,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
     <spotbugs.version>4.2.2</spotbugs.version>
     <spotbugs-maven-plugin.version>4.2.0</spotbugs-maven-plugin.version>
 
-    <shell-executable>bash</shell-executable>
+    <shell-executable>C:\Program Files\Git\bin\bash.exe</shell-executable>
 
     <leveldbjni.group>org.fusesource.leveldbjni</leveldbjni.group>
   </properties>
